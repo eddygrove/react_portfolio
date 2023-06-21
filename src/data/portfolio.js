@@ -30,7 +30,7 @@ export default [
   {
     id: 4, // Used in JSX as a key
     title: "Web Design",
-    imgUrl: "dist/assets/snigel_site_screen.png",
+    imgUrl: "src/assets/snigel_site_screen.png",
     stack: ["HTML", "CSS", "PHP", "MODx", "Wordpress", "WooCommerce"],
     link: "https://github.com/eddygrove",
   },

@@ -4,6 +4,13 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Timeline from "./components/Timeline";
 import Portfolio from "./components/Portfolio";
+import styled from "styled-components";
+
+const StyledButton = styled.button`
+  border: solid 2px #ddd;
+  background-color: grey;
+  text-align: center;
+`;
 
 function App() {
   const [theme, setTheme] = useState(null);
@@ -77,6 +84,7 @@ function App() {
           <Portfolio />
           <Timeline />
           <Contact />
+          <StyledButton>Styled Button</StyledButton>
           <Footer />
         </div>
       </div>
