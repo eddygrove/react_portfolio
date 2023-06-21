@@ -1,30 +1,30 @@
-import React, { useEffect, useState } from 'react';
-import Intro from './components/Intro';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import Timeline from './components/Timeline';
-import Portfolio from './components/Portfolio';
+import React, { useEffect, useState } from "react";
+import Intro from "./components/Intro";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import Timeline from "./components/Timeline";
+import Portfolio from "./components/Portfolio";
 
 function App() {
   const [theme, setTheme] = useState(null);
 
   useEffect(() => {
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      setTheme('dark');
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      setTheme("dark");
     } else {
-      setTheme('light');
+      setTheme("light");
     }
   }, []);
 
   const handleThemeSwitch = () => {
-    setTheme(theme === 'dark' ? 'light' : 'dark');
+    setTheme(theme === "dark" ? "light" : "dark");
   };
 
   useEffect(() => {
-    if (theme === 'dark') {
-      document.documentElement.classList.add('dark');
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
     } else {
-      document.documentElement.classList.remove('dark');
+      document.documentElement.classList.remove("dark");
     }
   }, [theme]);
 
@@ -43,7 +43,6 @@ function App() {
         d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
       />
     </svg>
-
   );
 
   const moon = (
@@ -53,7 +52,8 @@ function App() {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="white"
-      className="w-6 h-6">
+      className="w-6 h-6"
+    >
       <path
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -62,17 +62,17 @@ function App() {
     </svg>
   );
 
-
   return (
     <>
       <button
-        type='button'
+        type="button"
         onClick={handleThemeSwitch}
-        className='fixed z-10 right-5 top-4 bg-violet-300 dark:bg-orange-300 text-lg p-1 rounded-md'>
-        {theme === 'dark' ? sun : moon}
+        className="fixed z-10 right-5 top-4 bg-violet-300 dark:bg-orange-300 text-lg p-1 rounded-md"
+      >
+        {theme === "dark" ? sun : moon}
       </button>
-      <div className='bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-300 min-h-screen font-archivo'>
-        <div className='max-w-5xl w-11/12 mx-auto'>
+      <div className="bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-300 min-h-screen font-archivo">
+        <div className="max-w-5xl w-11/12 mx-auto">
           <Intro />
           <Portfolio />
           <Timeline />
@@ -81,7 +81,7 @@ function App() {
         </div>
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
