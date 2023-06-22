@@ -1,9 +1,9 @@
-import snailImg from "src/assets/snigel_logo-space.png";
-import abbImg from "src/assets/ABB-robotics.jpg";
-import mengerImg from "src/assets/perform_symbol.jpg";
-import fabelImg from "src/assets/Fabel-wash-logo.png";
-import siteImg from "src/assets/snigel_site_screen.png";
-import codeImg from "src/assets/code_screenshot.png";
+import snailImg from "../assets/snigel_logo-space.png";
+import abbImg from "../assets/ABB-robotics.jpg";
+import mengerImg from "../assets/perform_symbol.jpg";
+import fabelImg from "../assets/Fabel-wash-logo.png";
+import siteImg from "../assets/snigel_site_screen.png";
+import codeImg from "../assets/code_screenshot.png";
 
 export default [
   {

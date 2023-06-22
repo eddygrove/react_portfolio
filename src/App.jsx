@@ -84,7 +84,7 @@ function App() {
           <Portfolio />
           <Timeline />
           <Contact />
-          <StyledButton>Styled Button</StyledButton>
+          <StyledButton>Download Resume</StyledButton>
           <Footer />
         </div>
       </div>
