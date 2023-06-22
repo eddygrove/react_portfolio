@@ -10,7 +10,7 @@ function Footer() {
           &copy; {new Date().getFullYear()} Björn Edlund. All rights reserved.
         </p>
       </div>
-      <div className="py-5 text-center text-sm text-orange-700">
+      <div className="py-5 text-center">
         <WeatherFetch />
       </div>
     </>
