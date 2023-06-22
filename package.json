@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && cp dist/index.html dist/200.html && surge ./dist/ edlund.surge.sh",
+    "teardown": "surge teardown edlund.surge.sh"
   },
   "dependencies": {
     "react": "^18.2.0",

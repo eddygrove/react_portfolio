@@ -4,7 +4,9 @@ function Intro() {
   return (
     <div className="pt-20 flex items-center justify-center flex-col text-center  pb-6">
       <h1 className="text-4xl md:text-7xl dark:text-white mb-1 md:mb-3 font-black">
-        <a href="#test">Björn Edlund</a>
+        <a href="#test" className="uppercase">
+          Björn Edlund
+        </a>
       </h1>
       <p className="text-base md:text-xl mb-3 font-medium">
         UX/UI designer & React Developer
