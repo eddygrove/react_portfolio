@@ -7,9 +7,24 @@ import Portfolio from "./components/Portfolio";
 import styled from "styled-components";
 
 const StyledButton = styled.button`
-  border: solid 2px #ddd;
-  background-color: grey;
+  background: linear-gradient(to bottom right, #ef4765, #ff9a5a);
+  border: 0;
+  border-radius: 12px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
   text-align: center;
+  text-decoration: none;
+  transition: box-shadow 0.2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
 `;
 
 function App() {
@@ -74,17 +89,20 @@ function App() {
       <button
         type="button"
         onClick={handleThemeSwitch}
-        className="fixed z-10 right-5 top-4 bg-violet-300 dark:bg-orange-300 text-lg p-1 rounded-md"
+        className="fixed z-10 right-5 top-4 bg-sky-700 dark:bg-rose-200 text-lg p-1 rounded-md"
       >
         {theme === "dark" ? sun : moon}
       </button>
+      <p className="fixed z-10 left-5 top-4 text-4xl p-1">🐻</p>
       <div className="bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-300 min-h-screen font-archivo">
         <div className="max-w-5xl w-11/12 mx-auto">
           <Intro />
           <Portfolio />
           <Timeline />
+          <div className="flex flex-col pb-16 items-center">
+            <StyledButton>Download Resume</StyledButton>
+          </div>
           <Contact />
-          <StyledButton>Download Resume</StyledButton>
           <Footer />
         </div>
       </div>
