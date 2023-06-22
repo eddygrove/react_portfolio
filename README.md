@@ -13,8 +13,6 @@ To run the site locally, please follow these instructions:
 5. Check the terminal for the address to the local server, e.g. http://localhost:XXXX
 6. Open the browser and visit this address to display the page.
 
-Welcome to explore my portfolio.
-
 ### Welcome to explore my Portfoilo online
 
 https://edlund.surge.sh/
