@@ -58,7 +58,7 @@ export default [
   {
     id: 7,
     year: "1991",
-    title: "MFA in Industrial Design, KONSTFACK",
+    title: "Industrial Design, Master of Fine Arts, KONSTFACK",
     duration: "4 years",
     details:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea in omnis corrupti! Similique error reprehenderit ab voluptatum fuga sint sapiente velit, soluta corporis repellendus quaerat, explicabo atque amet? Nisi, odit.",
