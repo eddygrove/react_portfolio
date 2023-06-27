@@ -22,15 +22,19 @@ function WeatherFetch() {
   }, []);
   return (
     <>
-      <h1 className="text-lg text-orange-700">Weather in Stockholm, Sweden:</h1>
-      <h3 className="text-sm text-orange-400">
-        Main Temperature : {mainTemp} Degrees Celsius
-      </h3>
-      <h3 className="text-sm text-orange-400">
-        Feels like: {feels_like} Degrees Celsius
-      </h3>
-      <h3 className="text-sm text-orange-400">Weather Parameter: {main}</h3>
-      <h3 className="text-sm text-orange-400">Description : {description}</h3>
+      <aside role="note" aria-label="the current weather in Stockholm">
+        <h1 className="text-lg text-orange-700">
+          Weather in Stockholm, Sweden:
+        </h1>
+        <h5 className="text-sm text-orange-400">
+          Main Temperature : {mainTemp} Degrees Celsius
+        </h5>
+        <h5 className="text-sm text-orange-400">
+          Feels like: {feels_like} Degrees Celsius
+        </h5>
+        <h5 className="text-sm text-orange-400">Weather Parameter: {main}</h5>
+        <h5 className="text-sm text-orange-400">Description : {description}</h5>
+      </aside>
     </>
   );
 }

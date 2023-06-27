@@ -87,6 +87,8 @@ function App() {
   return (
     <>
       <button
+        id="al"
+        aria-label="switch theme"
         type="button"
         onClick={handleThemeSwitch}
         className="fixed z-10 right-5 top-4 bg-sky-700 dark:bg-rose-200 text-lg p-1 rounded-md"
