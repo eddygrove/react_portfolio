@@ -55,4 +55,12 @@ export default [
     details:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea in omnis corrupti! Similique error reprehenderit ab voluptatum fuga sint sapiente velit, soluta corporis repellendus quaerat, explicabo atque amet? Nisi, odit.",
   },
+  {
+    id: 7,
+    year: "1991",
+    title: "MFA in Industrial Design, KONSTFACK",
+    duration: "4 years",
+    details:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea in omnis corrupti! Similique error reprehenderit ab voluptatum fuga sint sapiente velit, soluta corporis repellendus quaerat, explicabo atque amet? Nisi, odit.",
+  },
 ];
